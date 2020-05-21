@@ -18,7 +18,7 @@
     "eject": "react-scripts eject",
     "changelog": "changelog -p -u https://github.com/MrCrazyBelka/generate-changelog -t v1.0.0",
     "preversion": "yarn && yarn codeCheck",
-    "version": "yarn build:prod && git add --force dist/",
+    "version": "yarn build && git add --force dist/",
     "postversion": "commit_message=$(git log -1 --format=%B) && git reset --soft HEAD~1 && git reset dist/ && git commit -m $commit_message",
     "updatePatchVersion": "yarn changelog && yarn version --patch && git push && git push --tags"
   },

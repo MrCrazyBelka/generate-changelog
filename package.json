@@ -1,6 +1,6 @@
 {
   "name": "changelog",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -19,7 +19,7 @@
     "changelog": "changelog -p -u https://github.com/MrCrazyBelka/generate-changelog -t v1.0.0",
     "preversion": "yarn",
     "version": "yarn build && git add --force build/",
-    "postversion": "commit_message=$(git log -1 --format=%B) && git reset --soft HEAD~1 && git reset dist/ && git commit -m $commit_message",
+    "postversion": "commit_message=$(git log -1 --format=%B) && git reset --soft HEAD~1 && git reset dist/ && git commit -m 'v1.0.0'",
     "updatePatchVersion": "yarn version --patch && git push && git push --tags"
   },
   "eslintConfig": {

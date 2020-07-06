@@ -20,7 +20,7 @@
     "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m \"updated CHANGELOG.md\" && npm version minor && git push origin && git push origin --tags",
     "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m \"updated CHANGELOG.md\" && npm version patch && git push origin && git push origin --tags",
     "version": "yarn build && git add --force build/",
-    "postversion": "commit_message=$(git log -1 --format=%B) && git reset --soft HEAD~1 && git reset dist/ && git commit -m \"Update version\""
+    "postversion": "git reset --soft HEAD~1 && git reset build/ && git commit -m \"Update version\""
   },
   "eslintConfig": {
     "extends": "react-app"

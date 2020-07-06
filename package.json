@@ -16,11 +16,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "changelog": "changelog -p -u https://github.com/MrCrazyBelka/generate-changelog -t v1.0.0",
-    "preversion": "yarn",
-    "version": "yarn build && git add --force build/",
-    "postversion": "commit_message=$(git log -1 --format=%B) && git reset --soft HEAD~1 && git reset dist/ && git commit -m 'v1.0.0'",
-    "updatePatchVersion": "yarn version --patch && git push && git push --tags"
+    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
+    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
+    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -1,3 +1,11 @@
+#### 2.1.1 (2020-07-06)
+
+##### Refactors
+
+* **gitignore:**
+  *  add idea folder (f628ce9d)
+  *  add idea folder (b7cdd615)
+
 ### 2.1.0 (2020-07-06)
 
 ##### Refactors

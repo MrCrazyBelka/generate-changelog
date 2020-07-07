@@ -20,7 +20,7 @@
     "buildRelease": "yarn build && git add --force build/ && git add CHANGELOG.md",
     "release:major": "changelog -M && git add CHANGELOG.md && git commit -m \"updated CHANGELOG.md\" && npm version major && yarn pushTags",
     "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m \"updated CHANGELOG.md\" && npm version minor && yarn pushTags",
-    "release:patch": "changelog -p && yarn buildRelease && yarn pushTags",
+    "release:patch": "changelog -p && yarn buildRelease && npm version patch && yarn pushTags",
     "preversion": "yarn && yarn test",
     "postversion": "git reset --soft HEAD~1 && git reset build/ && git commit -m \"v%npm_package_version%\""
   },

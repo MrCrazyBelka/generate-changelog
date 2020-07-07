@@ -2,7 +2,6 @@ import React from 'react';
 import logo from './logo.svg';
 
 import './App.css';
-import 'mortgage-ui-kit/dist/main.css';
 
 function App() {
   return (

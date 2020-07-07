@@ -1,3 +1,9 @@
+#### 1.0.4 (2020-07-07)
+
+##### New Features
+
+* **App:**  integrate-ui (acea38f2)
+
 #### 1.0.3 (2020-07-07)
 
 ##### Refactors

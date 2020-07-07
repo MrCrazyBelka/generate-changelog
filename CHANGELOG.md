@@ -3,6 +3,26 @@
 ##### Refactors
 
 * **gitignore:**
+  *  add idea folder (72bf9341)
+  *  add idea folder (8a07225d)
+  *  add idea folder (fa31b718)
+  *  add idea folder (6e6a6ce5)
+  *  add idea folder (cf27a9c8)
+  *  add idea folder (5c937816)
+  *  add idea folder (6532c849)
+  *  add idea folder (d8a5d65e)
+  *  add idea folder (11712a0b)
+  *  add idea folder (4d772471)
+  *  add idea folder (d6d61874)
+  *  add idea folder (00c7d588)
+  *  add idea folder (2725ed67)
+  *  add idea folder (0f0349ff)
+
+#### 3.0.3 (2020-07-07)
+
+##### Refactors
+
+* **gitignore:**
   *  add idea folder (5c937816)
   *  add idea folder (6532c849)
   *  add idea folder (d8a5d65e)

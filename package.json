@@ -16,10 +16,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "pushTags": "git push origin && git push origin --tags",
+    "pushTags": "git push && git push --tags",
     "version": "yarn build && git add --force build/",
-    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m \"updated CHANGELOG.md\" && npm version --major && yarn pushTags",
-    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m \"updated CHANGELOG.md\" && npm version --minor && yarn pushTags",
+    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m \"updated CHANGELOG.md\" && yarn version --major && yarn pushTags",
+    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m \"updated CHANGELOG.md\" && yarn version --minor && yarn pushTags",
     "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m \"updated CHANGELOG.md\" && yarn version --patch && yarn pushTags",
     "preversion": "yarn && yarn test",
     "postversion": "git reset --soft HEAD~1 && git reset build/ && git commit -m \"v%npm_package_version%\""
